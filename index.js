@@ -6,7 +6,7 @@ function getRepositories() {
   xhr.send()
   return false;
 }
-function displayRepositories() {
+function show() {
   const repos = JSON.parse(this.responseText)
   const repoList = "<ul>" + repos.map(repo => {
     const dataUsername = 'data-username="' + repo.owner.login + '"'
