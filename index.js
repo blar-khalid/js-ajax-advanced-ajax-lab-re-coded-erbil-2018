@@ -3,8 +3,7 @@ function getRepositories() {
   const xhr = new XMLHttpRequest()
   xhr.addEventListener("load", displayRepositories)
   xhr.open("GET", url)
-  xhr.send()
-  return false;
+  xhr.send();
 }
 function show() {
   const repos = JSON.parse(this.responseText)
