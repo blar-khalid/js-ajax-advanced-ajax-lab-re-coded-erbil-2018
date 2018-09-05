@@ -1,8 +1,8 @@
 function getRepositories() {
-  const uri = "https://api.github.com/users/AhmadAbdulkhaliq/repos"
+  const url = 'https://github.com/blar-khalid';
   const xhr = new XMLHttpRequest()
   xhr.addEventListener("load", displayRepositories)
-  xhr.open("GET", uri)
+  xhr.open("GET", url)
   xhr.send()
   return false;
 }
